@@ -1,0 +1,24 @@
+{
+  "name": "react-typescript-example",
+  "author": "Mark <mark@remarkablemark.org>",
+  "scripts": {
+    "build": "npm run clean && npm run build:production",
+    "build:production": "NODE_ENV=production webpack",
+    "build:development": "NODE_ENV=development webpack",
+    "build:watch": "npm run build:development -- --watch",
+    "clean": "rm -rf dist",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "16.4.14",
+    "@types/react-dom": "16.0.8",
+    "awesome-typescript-loader": "5.2.1",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "source-map-loader": "0.2.4",
+    "typescript": "3.1.1",
+    "webpack": "4.20.2",
+    "webpack-cli": "3.1.1"
+  },
+  "license": "MIT"
+}
